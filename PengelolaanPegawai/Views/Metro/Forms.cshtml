@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Forms";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+
+@using (Html.BeginForm("Latihan", "Metro", FormMethod.Post, new { @class = "form-horizontal" }))
+{ 
+    @Html.Label("TextBoxNama", "Nama", new { @class = "control-label" }) 
+    @Html.TextBox("TextBoxNama", "", new { @class = "span6 typeahead" })
+    
+    @Html.Label("TextBoxAlamat", "Alamat", new { @class = "control-label" })
+    @Html.TextBox("TextBoxAlamat", "", new { @class = "span6 typeahead" })
+}
+
